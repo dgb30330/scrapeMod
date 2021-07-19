@@ -7,16 +7,16 @@ the primary **scrape(url,frontBackList)** function accepts two parameters, first
 
 the front back pair works as follows
 
-*Suppose the string you seek is in an html link structured as such:
+-Suppose the string you seek is in an html link structured as such:
 
-'''
+```
 <a href="**https://iwantthislink.com**">Standard label</a>
-'''
-*You'd create a tuple containing the exact sequence before and after the desired data
-'''
+```
+-You'd create a tuple containing the exact sequence before and after the desired data
+```python
 front = '<a href="'
 back = '">Standard label</a>' (alternately back = '">' would be sufficient
 frontBackPair = (front,back)
 frontBackList = [frontBackPair,frontBackPair2,...]
-'''
+```
     
